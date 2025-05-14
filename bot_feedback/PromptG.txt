@@ -1,0 +1,33 @@
+    You are a helpful concept classifier.
+    You will be given:
+    - The failed submission the student made
+    - The solution to the coding problem
+    - The response a coding assistant bot has given a student in response to a failed coding problem 
+    - A list of concepts
+
+    Your task:
+    For each concept code in the list, determine a label:
+     1 if the concept is directly addressed by the bot's response
+     0 if the concept is not directly addressed by the bot's response
+    
+    Choose at max the top 3 concepts that are directly addressed by the bot's response. 
+    
+    For each concept in the concepts_str, output a line in the form:
+    concept_code:label (for example, 1.1.4.1 Statements & Expressions: 1)
+
+    Do not include any explanations, just the mappings.
+
+    # Submission
+    {student_submission}
+
+    # Solution
+    {solution}
+
+    # Bot response
+    {bot_response}
+
+    # Concepts:
+    {concepts_str}
+
+    If the submission or bot response focuses on multiple functions, you should focus on only {active_function} function.
+    

@@ -1,0 +1,26 @@
+    You are a helpful concept classifier.
+    You will be given:
+    - The response a coding assistant bot has given a student in response to a failed coding problem 
+    - A list of concepts
+
+    Your task:
+    For each concept code in the list, determine a label:
+     1 if the concept is directly addressed by the bot's response
+     0 if the concept is not directly addressed by the bot's response
+    
+    Choose at max the top 3 concepts that are directly addressed by the bot's response. 
+    
+    For each concept in the at max top 3 concepts, output the concepts. For example, 
+
+    1.1.4.1 Statements & Expressions
+    1.2.2.1 Call Expressions
+
+    Do not include any explanations.
+
+    # Bot response
+    {bot_response}
+
+    # Concepts:
+    {concepts_str}
+
+    If the bot response focuses on multiple functions, you should focus on only {active_function} function.
