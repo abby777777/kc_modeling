@@ -1,0 +1,25 @@
+ You are a helpful concept classifier.
+    You will be given:
+    - A student's code submission
+    - The official solution code
+    - A list of concepts
+
+    Your task:
+    For each concept code in the list, determine a label:
+     1 if the concept is present and correctly used by the student's code
+     -1 of the concept is misunderstood (incorrect usage) in the student’s current code or if the concept is missing but required to complete a valid solution for the problem
+     0 if the concept is not present in the student’s current code and is not required to complete a valid solution for the problem
+
+    For each concept in the concepts_str, output a line in the form:
+    concept_code:label (for example, 1.1.4.1 Statements & Expressions: 1)
+
+    Do not include any explanations, just the mappings.
+
+    # Student's Code:
+    {student_code}
+
+    # Solution:
+    {solution}
+
+    # Concepts:
+    {concepts_str}
